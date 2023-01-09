@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{enumitem}
+\usepackage{hyperref,xcolor}
+\hypersetup{
+    colorlinks,
+    urlcolor={black}  %black!50!blue
+}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\let\vec\mathbf
+
+\def\inputGnumericTable{}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{mathtools}
+\newcommand\Myperm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2][^n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\Problem}{\noindent \textbf{Problem: }}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\setlist[enumerate]{font=\small\bfseries}
+
+\begin{document}
+\title{\textbf{PROBABILITY 1}}
+\author{Vemulapalli Bavya Sri - FWC22046}
+\date{December 2022}
+
+
+\maketitle
+
+$\mathbf{11.16.3.8}$\\
+    Three coins are tossed once Find the probability of getting (i) 3 heads  (ii) 2 heads   (iii) at least 2 heads   (iv) at most 2 heads  (v) no head  (vi) 3 tails   (vii) exactly two tails  (viii) no tail  (ix) at most two tails\\
+
+\solution
+When three coins are tossed once the sample space is given by
+\vspace{0.1cm}
+\begin{align}
+   S=HHH,HHT,HTH,THH,HTT,THT,TTH,TTT 
+\end{align}
+\begin{align}
+    n(s) = 8
+\end{align}
+(i) Let B be the event of the occurrence of 3 heads Accordingly 
+\begin{align}
+    B=HHH\\
+    P(B) = \frac{n(B)}{n(s)} = \frac{1}{8}
+\end{align}
+(ii) Let C be the event of the occurrence of 2 heads Accordingly
+\begin{align}
+    C=HHT,HTH,THH\\
+    P(C) = \frac{n(C)}{n(s)} = \frac{3}{8}
+\end{align}
+(iii) Let D be the event of the occurrence of at least 2 heads
+Accordingly \\
+\begin{align}
+    D=HHH,HHT,HTH,THH\\
+    P(D) = \frac{n(D)}{n(s)} = \frac{4}{8}
+\end{align}
+(iv) Let E be the event of the occurrence of at most 2 heads
+Accordingly \\
+\begin{align}
+    E=HHT,HTH,THH,HTT,THT,TTH,TTT
+\end{align}
+\begin{align}
+    P(E) = \frac{n(E)}{n(s)} = \frac{7}{8}
+\end{align}
+(v) Let F be the event of the occurrence of no head
+Accordingly\\
+\begin{align}
+    F=TTT\\
+    P(F) = \frac{n(F)}{n(s)} = \frac{1}{8}
+\end{align}
+(vi) Let G be the event of the occurrence of 3 tails
+Accordingly\\
+\begin{align}
+    G=TTT\\
+    P(G) = \frac{n(G)}{n(s)} = \frac{1}{8}
+\end{align}
+(vii) Let H be the event of the occurrence of exactly 2 tails
+Accordingly \\
+\begin{align}
+    H=HTT,THT,TTH\\
+    P(H) = \frac{n(H)}{n(s)} = \frac{3}{8}
+\end{align}
+(viii) Let I be the event of the occurrence of no tail
+Accordingly\\
+\begin{align}
+     I=HHH\\
+      P(I) = \frac{n(I)}{n(s)} = \frac{1}{8}
+\end{align}
+(ix) Let J be the event of the occurrence of at most 2 tails
+Accordingly \\
+\begin{align}
+    J=HHH,HHT,HTH,THH,HTT,THT,TTH
+\end{align}
+\begin{align}
+    P(J) = \frac{n(J)}{n(s)} = \frac{7}{8}
+\end{align}
+\end{document}
